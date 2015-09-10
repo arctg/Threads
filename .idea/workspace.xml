@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cb15926-69d9-4416-a27d-b200f35a41a9" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\Executor\ThreadExecutor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\ProducerConsumer\Bag.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\ProducerConsumer\Consumer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\ProducerConsumer\Producer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\ProducerConsumer\Runner.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\SyncSingleton\Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\ThreadPool\Runner.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\ThreadPool\Task.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\ThreadPool\ThreadPool$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\ThreadPool\ThreadPool$PWorker.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\ThreadPool\ThreadPool.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\bank\Account.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\bank\Bank.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\bank\Main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\bank\Main.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\bank\Randoma.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\concurrent\BigInt$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dennis\IdeaProjects\Threads\out\concurrent\BigInt.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="5cb15926-69d9-4416-a27d-b200f35a41a9" name="Default" comment="" />
     <ignored path="BankTransfer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -704,12 +684,12 @@
       <workItem from="1441821496947" duration="418000" />
       <workItem from="1441883686522" duration="3483000" />
       <workItem from="1441887954426" duration="12000" />
-      <workItem from="1441894354564" duration="5743000" />
+      <workItem from="1441894354564" duration="5809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27626000" />
+    <option name="totallyTimeSpent" value="27692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
