@@ -16,20 +16,23 @@ public class Bank {
         this.accountList = new ArrayList<>();
         this.countOfAccounts = countOfAccounts;
         for (int i = 0; i < countOfAccounts; i++) {
-            accountList.add(new Account(Randoma.randInt(500, 12000)));
+            accountList.add(new Account(Randoma.randInt(500, 12000),i));
         }
     }
 
     public void transfer(Account from, Account to, int amount) {
 
-        synchronized (from) {
-            synchronized (to) {
+        Object lock1 = from.getId() < to.getId() ? from : to;
+        Object lock2 = from.getId() < to.getId() ? to : from;
+        synchronized (lock1) {
+            synchronized (lock2) {
                 try {
                     from.withdraw(amount);
+                    to.deposit(amount);
                 } catch (IOException e) {
                     System.out.println(e);
                 }
-                to.deposit(amount);
+
             }
         }
     }

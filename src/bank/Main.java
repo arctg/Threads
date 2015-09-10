@@ -14,7 +14,7 @@ public class Main {
 
 
 
-        for (int i=0;i<bank.getAccountList().size();i++){
+        for (int i=0;i<30000;i++){
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -35,10 +35,14 @@ public class Main {
         }
 
         try{
-            Thread.sleep(1000);
+            while (Thread.activeCount()>2){
+                Thread.sleep(500);
+            }
         }catch (InterruptedException e){
             System.out.println(e);
         }
+
+
         System.out.println("Active: " + Thread.activeCount());
         System.out.println("After transfer: " + bank.getTotalSumOfBank());
     }

@@ -8,9 +8,11 @@ import java.io.IOException;
 public class Account {
 
     private Integer sumTotal;
+    private int id;
 
-    Account(Integer sumTotal){
+    Account(Integer sumTotal,int id){
         this.sumTotal=sumTotal;
+        this.id = id;
     }
 
     public void deposit (Integer amount){
@@ -29,5 +31,13 @@ public class Account {
 
     public void setSumTotal(Integer sumTotal) {
         this.sumTotal = sumTotal;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
