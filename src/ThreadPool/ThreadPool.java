@@ -9,11 +9,11 @@ public class ThreadPool {
 
     private final int amount;
     private final PWorker[] threads;
-    public final LinkedList goals;
+    public final LinkedList tasks;
 
     public ThreadPool(int num) {
         this.amount = num;
-        goals = new LinkedList();
+        tasks = new LinkedList();
         threads = new PWorker[amount];
 
         for (int i = 0; i < amount; i++) {
@@ -23,13 +23,13 @@ public class ThreadPool {
     }
 
     public boolean haveWork() {
-        return (goals.size() > 0) ? true : false;
+        return (tasks.size() > 0) ? true : false;
     }
 
     public void execute(Runnable task) {
-        synchronized (goals) {
-            goals.addLast(task);
-            goals.notify();
+        synchronized (tasks) {
+            tasks.addLast(task);
+            tasks.notify();
         }
     }
 
@@ -38,14 +38,14 @@ public class ThreadPool {
             Runnable task;
 
             while (true) {
-                synchronized (goals) {
-                    while (goals.isEmpty()) {
+                synchronized (tasks) {
+                    while (tasks.isEmpty()) {
                         try {
-                            goals.wait();
+                            tasks.wait();
                         } catch (InterruptedException e) {
                         }
                     }
-                    task = (Runnable) goals.removeFirst();
+                    task = (Runnable) tasks.removeFirst();
                 }
                 try {
                     task.run();
