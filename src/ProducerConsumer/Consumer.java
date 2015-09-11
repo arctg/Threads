@@ -1,4 +1,4 @@
-package ProducerConsumer;
+package producerConsumer;
 
 /**
  * Created by dennis on 9/8/2015.

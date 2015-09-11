@@ -1,4 +1,4 @@
-package ThreadPool;
+package threadPool;
 
 /**
  * Created by dennis on 9/10/2015.

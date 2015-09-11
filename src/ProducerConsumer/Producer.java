@@ -1,4 +1,4 @@
-package ProducerConsumer;
+package producerConsumer;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package SyncSingleton;
+package syncSingleton;
 
 /**
  * Created by dennis on 9/4/2015.
